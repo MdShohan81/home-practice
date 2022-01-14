@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+}
+    /*  
+    ======================
+         common class  
+    =======================
+    */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.banner{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.banner-left{
+   display: flex;
+   align-items: center;
+    color:white;
+    
+}
+.banner-title{
+    font-size: 60px;
+    white-space: nowrap;
+    position: relative;
+    color: transparent;
+}
+.banner-title::after
+{
+    content: 'Ello Shoppings';
+    position: absolute;
+    top:0;
+    left:0;
+    color: #22bedd;
+    animation: typing 6s linear infinite;
+}
+@keyframes typing {
+    0%{
+        content: 'E|';
+    }
+    4%{
+        content: 'El|';
+    }
+    8%{
+        content: 'Ell|';
+    }
+    12%{
+        content: 'Ello|';
+    }
+    17%{
+        content: 'Ello |';
+    }
+    21%{
+        content: 'Ello S|';
+    }
+    25%{
+        content: 'Ello Sh|';
+    }
+    30%{
+        content: 'Ello Sho|';
+    }
+    36%{
+        content: 'Ello Shop|';
+    }
+    42%{
+        content: 'Ello Shopp|';
+    }
+    48%{
+        content: 'Ello Shoppi|';
+    }
+    56%{
+        content: 'Ello Shoppin|';
+    }
+    66%{
+        content: 'Ello Shopping|';
+    }
+    72%{
+        content: 'Ello Shoppings|';
+    }
+    76%,
+    87%{
+        content: 'Ello Shoppings|';
+    }
+    88%{
+        content: 'Ello Shopping|';
+    }
+    89%{
+        content: 'Ello Shoppin|';
+    }
+    90%{
+        content: 'Ello Shoppi|';
+    }
+    91%{
+        content: 'Ello Shopp|';
+    }
+    92%{
+        content: 'Ello Shop|';
+    }
+    93%{
+        content: 'Ello Sho|';
+    }
+    94%{
+        content: 'Ello Sh|';
+    }
+    95%{
+        content: 'Ello S|';
+    }
+    96%{
+        content: 'Ello |';
+    }
+    97%{
+        content: 'Ello|';
+    }
+    98%{
+        content: 'Ell|';
+    }
+    99%{
+        content: 'El|';
+    }
+    100%{
+        content: '|';
+    }
+}
+.banner-text{
+    line-height: 2;
+}
+.love-btn{
+    outline: 0;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #22bedd;
+    color: white;
+    border: none;
+    border: 3px solid #22bedd;
+    cursor: pointer;
+    transition: .5s;
+}
+.love-btn:hover{
+    background-color: black;
+    color:#22bedd;
+    border: 3px solid #22bedd;
+}
+.banner-right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
